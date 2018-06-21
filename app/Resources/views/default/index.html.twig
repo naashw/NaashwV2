@@ -1,0 +1,306 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="{{ asset('build/naashw-portfolio.css') }}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="import" href="/awesome-button.html">
+
+{% endblock %}
+
+{% block body %}
+
+
+<!-- tu vien verifier le code ? :D -->
+
+<!-- First "page" -->
+
+<section id="firstPage">
+  <nav>
+        <div class="bar d-flex justify-content-center">
+          <div class="barCercle text-center">
+            <div class="Logo">
+            <h1>N</h1>
+            </div>
+          </div>
+        </div>
+  </nav>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-sm-8 description">
+      <p><span id="typed"></span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- skills -->
+<section id="skills">
+  <div class="container-fluid">
+    <div class="row  text-center skillsblock">
+      <div class="col-md-4 col-xs-12 ">
+        <div class="topblock ">
+          <h2>HTML5 & CSS3</h2>
+        </div>
+        <div class="block justify-content-center">
+          <p> Référencements naturels </br>
+            Responsive web design</br>
+          MediaQuery</br>
+
+        Sass </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 ">
+        <div class="topblock ">
+            <h2>SQL</h2>
+        </div>
+        <div class="block justify-content-center">
+          <p>Jointure BDD</br>
+          Mysql (SGBDR)</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 ">
+        <div class="topblock ">
+            <h2>PHP</h2>
+        </div>
+        <div class="block justify-content-center">
+          <p> MYSQLI </br>
+          PDO </br>
+          Requete préparé </br>
+         Design Patern MVC</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 ">
+        <div class="topblock ">
+            <h2>SYMFONY3</h2>
+        </div>
+        <div class="block justify-content-center">
+          <p> Mapping objet-relationel doctrine</br>
+              WebPack encore </br>
+           Twig</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 ">
+        <div class="topblock ">
+            <h2>Javascript</h2>
+        </div>
+        <div class="block justify-content-center">
+          <p>Ajax </br>
+          Jquery </br>
+        Manipulation du DOM </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 ">
+        <div class="topblock ">
+            <h2>General</h2>
+        </div>
+        <div class="block justify-content-center">
+          <p>Git/GitHub</br>
+          Deploiement en ligne</br>
+        Méthodes agiles SCRUM </p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- experiences-->
+
+<div class="contain-section" id="portfolio">
+  <div class="container" >
+    <h2 class="text-center">Mes expériences à la Wild code school (WCS)</h2>
+    <div class="text-right" id="portfolio-selector">
+      <span class="light">Affichage :</span>
+      <a id="portfolio-selector-card" class=""><i class="fas fa-th"></i></a>
+      <a id="portfolio-selector-timeline" class=""><i class="fas fa-long-arrow-alt-down"></i></a>
+    </div>
+
+    <div class="timeline" id="portfolio-timeline">
+      <div class="timeline-container timeline-left">
+        <div class="timeline-content">
+          <h5>26 février 2018</h5>
+          <p>Test d'entrée à la WCS, je devais produire à partir d'un squelette html, un site avec certaines sections définie, sur un cirque fictif connu mondialement connu.<br/>
+            SKills: #HTML #CSS </br>
+            <awesome-button class="" href="https://naashw.github.io/Wild-circus/" type="primary" >Wild circus !</awesome-button>
+
+          </div>
+        </div>
+        <div class="timeline-container timeline-right">
+          <div class="timeline-content">
+            <h5>17 mars 2018</h5>
+            <p>Fin du projet n°1
+              thèmes: Faire un site qui regroupe les bons plans des bars sur Strasbourg.</br>
+              SKills : #HTML #CSS #BOOTSTRAP #PHP </br>
+              <awesome-button class="" href="http://projets.naashw.fr/Projet_bieres/" type="primary" >Stras'bières !</awesome-button>
+
+            </div>
+          </div>
+          <div class="timeline-container timeline-left">
+            <div class="timeline-content">
+              <h5>9 Avril 2018</h5>
+              <p>Fin du Hackathon n°1<br/>
+                Durée : 22 Heures.</br>
+                Thème : combat tour par tour en PHP et à l'aide d'une api de 700~ personnages.</br>
+                SKills: HTML #CSS #BOOTSTRAP #MVC #POO  </br>
+                <awesome-button class="" href="http://hackathon.naashw.fr/GHI/" type="primary" >Wild Fighter 2018 !</awesome-button>
+
+              </div>
+            </div>
+            <div class="timeline-container timeline-right">
+              <div class="timeline-content">
+                <h5>2 Mai 2018</h5>
+                <p>Fin du projet n°2 <br/>
+                  thèmes : Re-crée le jeu "Qui est-ce?" en PHP.</br>
+                  Skills : #HTML #CSS #BOOTSTRAP #MVC #POO #GameDesign #MYSQL </br>
+                  <awesome-button class="" href="http://projets.naashw.fr/Wooamye/" type="primary" >Wooamye ?</awesome-button>
+
+                </div>
+              </div>
+              <div class="timeline-container timeline-left">
+                <div class="timeline-content">
+                  <h5>20 Mai 2018</h5>
+                  <p>Fin du Hackathon n°2.<br/>
+                    Durée: 48h.<br/>
+                    Thème: Coupe du monde de sport collectif
+                    La Fédération Internationale d'AquaPoney veulent créer un site qui va permettre à des centaines de millions de personnes de suivre l'événement exceptionnel sur internet.</br>
+                    SKills : #HTML #CSS #BOOTSTRAP #MVC #POO #SYMFONY3.4 #WEBPACK #JQUERY #MYSQL </br>
+                    <awesome-button class="" href="http://hackathon.naashw.fr/AquaPoney/" type="primary" >Aquaponey !</awesome-button>
+                  </div>
+                </div>
+                <div class="timeline-container timeline-right">
+                  <div class="timeline-content">
+                    <h5>23 mai 2018</h5>
+                    <p>Début du projet 3
+                      Création d'un site client en cours
+                      Création d'un site sous Symfony 3.4 pour une entreprise
+                      spécialisée dans la collecte en temps réel de données sportives.
+                      Création d'un "clavier" en Javascript.
+                      Récupération de données BDD + affichage des statistiques.
+                      Création d'un espace utilisateur spécifique.
+                      Sécurisé + scalable.</br>
+                      SKills : #HTML #CSS #BOOTSTRAP #MVC #POO #SYMFONY3.4 #WEBPACK #FosUserBundle #JQUERY #AJAX #MYSQL </br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="portfolio-card" style="display:none;">
+                <div class="row">
+                  <div class="col-md-4 col-xs-12 theCard">
+                    <div class="card small">
+                      <div class="card-body">
+                        <h5>26 février 2018</h5>
+                        <p>Test d'entrée à la WCS, je devais produire à partir d'un squelette html, un site avec certaines sections définie, sur un cirque fictif connu mondialement connu.<br/>
+                          SKills: #HTML #CSS </br>
+                          <a target="_blank" href="https://naashw.github.io/Wild-circus/">Projet WILD CIRCUS</a> </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 theCard">
+                      <div class="card  small">
+                        <div class="card-body">
+                          <h5>17 mars 2018</h5>
+                          <p>Fin du projet n°1
+                            thèmes: Faire un site qui regroupe les bons plans des bars sur Strasbourg.</br>
+                            SKills : #HTML #CSS #BOOTSTRAP #PHP </br><a target="_blank"  href="http://projets.naashw.fr/Projet_bieres/">Projet fictif bières2stras'</a><br/> </p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-md-4 col-xs-12 theCard">
+                        <div class="card  small">
+                          <div class="card-body">
+                            <h5>9 Avril 2018</h5>
+                            <p>Fin du Hackathon n°1<br/>
+                              Durée : 22 Heures.</br>
+                              Thème : combat tour par tour en PHP et à l'aide d'une api de 700~ personnages.</br>
+                              SKills: HTML #CSS #BOOTSTRAP #MVC #POO  </br>
+                              <a target="_blank" href="http://hackathon.naashw.fr/GHI/">Wild Fighter 2018</a>.</p>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                        <div class="col-md-4 col-xs-12 theCard">
+                          <div class="card  small">
+                            <div class="card-body">
+                              <h5>2 Mai 2018</h5>
+                              <p>Fin du projet n°2 <br/>
+                                thèmes : Re-crée le jeu "Qui est-ce?" en PHP.</br>
+                                Skills : #HTML #CSS #BOOTSTRAP #MVC #POO #GameDesign </br>
+                                <a target="_blank" href="http://projets.naashw.fr/Wooamye/">Projet fictif Wooamye</a></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-xs-12 theCard">
+                            <div class="card  small">
+                              <div class="card-body">
+                                <h5>20 Mai 2018</h5>
+                                <p>Fin du Hackathon n°2.<br/>
+                                  Durée: 48h.<br/>
+                                  Thème: Coupe du monde de sport collectif
+                                  La Fédération Internationale d'AquaPoney veulent créer un site qui va permettre à des centaines de millions de personnes de suivre l'événement exceptionnel sur internet.</br>
+
+                                  SKills : #HTML #CSS #BOOTSTRAP #MVC #POO #SYMFONY3.4 #WEBPACK #JQUERY </br>
+
+                                  <a target="_blank" href="http://hackathon.naashw.fr/AquaPoney/">AquaPoney</a></p>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12 theCard">
+                              <div class="card small">
+                                <div class="card-body">
+                                  <h5>23 mai 2018</h5>
+                                  <p>Début du projet 3
+                                    Création d'un site client en cours
+                                    Création d'un site sous Symfony 3.4 pour une entreprise
+                                    spécialisée dans la collecte en temps réel de données sportives.
+                                    Création d'un "clavier" en Javascript.
+                                    Récupération de données BDD + affichage des statistiques.
+                                    Création d'un espace utilisateur spécifique.
+                                    Sécurisé + scalable.</br>
+                                    SKills : #HTML #CSS #BOOTSTRAP #MVC #POO #SYMFONY3.4 #WEBPACK #FosUserBundle #JQUERY #AJAX </br>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <footer class="bg-light" id="footer">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-md-12 text-center">
+                            <h4>CONTACT</h4>
+                            <ul class="list-inline d-block mx-auto">
+                              <li class="list-inline-item">
+                                <awesome-button class="github" href="https://github.com/Naashw" type="github" sharer>mon Github!</awesome-button>
+                              </li>
+                              <li class="list-inline-item">
+                                <awesome-button class="linkedin" href="https://www.linkedin.com/in/hasan-taskin/" type="linkedin" sharer>Mon linkedin!</awesome-button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+
+                    {% endblock %}
+
+                    {% block javascripts %}
+                    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+                    <script type="text/javascript" scr="{{ asset('build/jquery.js') }}"></script>
+                    <script type="text/javascript" src="{{ asset('build/index.js') }}"></script>
+                    <script src="{{ asset('build/typed.js') }}"></script>
+                    <script type="text/javascript" src="{{ asset('build/progressbar.js') }}"></script>
+
+                    {% endblock %}

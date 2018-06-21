@@ -1,0 +1,10 @@
+{
+  "web/jquery.js": "/web/jquery.js",
+  "web/progressbar.js": "/web/progressbar.js",
+  "web/naashw-portfolio.js": "/web/naashw-portfolio.js",
+  "web/naashw-portfolio.css": "/web/naashw-portfolio.css",
+  "web/bootstrap4.js": "/web/bootstrap4.js",
+  "web/bootstrap4.css": "/web/bootstrap4.css",
+  "web/typed.js": "/web/typed.js",
+  "web/index.js": "/web/index.js"
+}

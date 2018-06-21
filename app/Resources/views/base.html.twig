@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="theme-color" content="#D2B48C" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Site web portfolio de TASKIN Hasan, développeur web PHP/Symfony/Js sur Strasbourg ou Lyon ! Mes compétences et mes projets son disponible sur mon site." />
+         <meta name="keywords" content="HTML, CSS, YAML,Json, PHP, JavaScript, Jquery, Symfony, Développeur, Web developer, Strasbourg, Lyon, Phaser, Game developer, Wild Code School, WCS, PortFolio, Codeur, Naashw, Naash, Naashw.fr, naashw.fr, naashw">
+        <meta name="author" content="TASKIN Hasan"/>
+        
+
+        <title>{% block title %}Naashw{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="alternate" href="http://www.naashw.fr/" hreflang="fr"/>
+        <link href="{{ asset('build/bootstrap4.css') }}" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        <script type="text/javascript" scr="{{ 'build/jquery.js' }}"></script>
+    </body>
+</html>
